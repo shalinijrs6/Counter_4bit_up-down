@@ -70,7 +70,8 @@ count=count+1;
 else
 count=count-1;
 end
-endmodule```
+endmodule
+```
 
 */Program  for  4-Bit Up-Down Counter
 
@@ -105,9 +106,11 @@ initial $monitor("Time=%t rst=%b clk=%b count=%b", $time,rst,clk,count);
 
 initial
 #320 $finish;
-endmodule```
+endmodule
+```
 
-### To Launch Simulation tool
+
+## To Launch Simulation tool
 	linux:/> nclaunch -new&            // “-new” option is used for invoking NCVERILOG for the first time for any design
 
 	linux:/> nclaunch&                 // On subsequent calls to NCVERILOG
@@ -224,4 +227,3 @@ It contains statements that map logical library names to their physical director
 ### Result
 
 The functionality of a 4bit_up-down asynchronous reset Counter was successfully verified using a test bench and simulated with the nclaunch tool.
-
